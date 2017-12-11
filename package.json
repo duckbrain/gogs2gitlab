@@ -1,0 +1,20 @@
+{
+  "name": "gogs2gitlab",
+  "version": "1.0.0",
+  "description": "Migrate Gogs to Gitlab",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gogs",
+    "gitlab",
+    "git"
+  ],
+  "author": "Jonathan Duck",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "node-fetch": "^1.7.2"
+  }
+}
