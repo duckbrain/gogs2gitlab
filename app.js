@@ -6,7 +6,7 @@ const gitlab = require('./gitlab');
 const parallelLimit = require('async/parallelLimit');
 const asyncify = require('async/asyncify');
 const gogs = require('./gogs');
-const config = require('./secure');
+const config = require('./config');
 Object.assign(gogs, config.gogs);
 Object.assign(gitlab, config.gitlab);
 
