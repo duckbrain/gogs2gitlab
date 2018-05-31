@@ -54,7 +54,7 @@ async function migrate(repo) {
     const issues = await gogs(`/repos/${full_name}/issues`);
 
     console.log("Cloning", ssh_url);
-    await exec(`git clone ${ssh_url} ${name}`);
+    await exec(`git clone --mirror ${ssh_url} ${name}`);
 
     console.log('Getting namespace', name);
     const namespace_id = await gitlab.getNamespaceID(groupName);
